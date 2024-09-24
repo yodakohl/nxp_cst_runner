@@ -28,5 +28,5 @@ jobs:
       - name: Upload Build Artifacts
         uses: actions/upload-artifact@v3
         with:
-          name: cst_signer
+          name: cst_signer-${{ matrix.arch }}
           path: ./src/
